@@ -5,16 +5,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 12px 16px;
   display: flex;
-  justify-content: left;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
   z-index: 1000;
-  margin-bottom: 900px;
+  margin: 0 0 900px 0;
 }
 
 .topnav a {
-  padding: 12px 16px;
+  padding: 10px 16px;
   color: white;
   text-decoration: none;
   font-size: 16px;
@@ -41,7 +40,22 @@
   }
 }
 
+a {
+  display: inline-block;
+  margin: 8px 0 8px 0;
+  font-weight: bold;
+  color: #2E3192;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.2s;
+  font-family: 'Ubuntu Mono', serif;
+}
+
+a:hover {
+  color: #0400ff;
+}
+
 body {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
     background: #FAF3F0;
     color: #2E2E2E;
     margin: 0;
@@ -52,11 +66,11 @@ body {
   }
 
 .head  {
-    margin-top: 75px;
+    margin-top: 60px;
     margin-left: 375px;
     text-align: center;
-    background: linear-gradient(135deg, #2E3192, #1BFFFF);
-    color: white;
+    background-color: #FFF;
+    color: #2E3192;
     padding: 30px 20px;
     width: 100%;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -112,10 +126,6 @@ body {
     margin-top: 5px;
   }
   
-  .content {
-    margin-left: 20px;
-  }
-  
   .sidebar {
     font-family: 'Ubuntu Mono','Hedvig Letters Serif', serif;
     font-size: 20px;
@@ -125,7 +135,7 @@ body {
     padding: 20px;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 56px;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
   }
@@ -177,20 +187,6 @@ body {
     font-family: Montserrat, Poppins, sans-serif;
     line-height: 1.8;
     font-size: 24px;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #2E3192;
-    text-decoration: none;
-    transition: color 0.3s, text-decoration 0.2s;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-    color: #0400ff;
   }
 
   .to-top {
