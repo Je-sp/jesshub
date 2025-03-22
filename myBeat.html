@@ -10,18 +10,31 @@
     <link href='https://fonts.googleapis.com/css?family=Hedvig Letters Serif' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
+<header>
+    <div class="topnav">
+        <a href="index.html">Home | </a>
+        <a href="bioPage.html">Biography | </a>
+        <a href="skillPage.html">Skills | </a>
+        <a href="resumePage.html">Resume | </a>
+        <a href="photoGallery.html">Photo Gallery | </a>
+        <a href="myBeat.html">My Beat | </a>
+        <a href="myKindOfFilm.html">My Kind of Film</a>
+    </div>
+</header> 
+
 <body id="top">
 
     <div class="sidebar light-grey bar-block" style="width:25%">
-        <h3 class="bar-item">Jess</h3>
-        <a href="index.html" class="bar-item button">Home</a>
         <a href="#about" class="bar-item button">About</a>
         <a href="#categories" class="bar-item button">Music Categories</a>
         <ul class="category-list">
-            <li><a href="#jazz" class="button">Jazz</a></li>
+            <li><a href="#rnb" class="button">R&B</a></li>
+            <li><a href="#altMus" class="button">Alternative Music</a></li>
+            <li><a href="#popPunk" class="button">Pop Punk</a></li>
             <li><a href="#pop" class="button">Pop</a></li>
-            <li><a href="#rock" class="button">Rock</a></li>
         </ul>
+        <a href="#myOnRepeat" class="bar-item button">On Repeat</a>
     </div>
 
     <div id="content" style="margin-left:25%">
@@ -31,96 +44,303 @@
 
             <div class="section" id="about">
                 <h2>About My Favorite Music</h2>
-                <p>Music has always been a big part of my life. Here, I share my favorite tracks and why they resonate with me. These songs have inspired me and hold a special place in my heart.</p>
+                <p>Music has always been a big part of my life. 
+                    Here, I share my favorite tracks and why they resonate with me. 
+                    These songs have inspired me and hold a special place in my heart.</p>
             </div>
 
             <div class="section" id="categories">
                 <h2>Music Categories</h2>
 
-                <div class="category" id="jazz">
-                    <h3>Jazz</h3>
-                    <p>Jazz is a genre that soothes the soul. Here are some of my favorite jazz tracks:</p>
+                <div class="section" id="categories">
+                    <h2>Music Categories</h2>
+                
+                    <div class="category" id="rnb">
+                        <h3>R&B</h3>
+                        <p>It blends elements of jazz, gospel, blues, and soul, creating a 
+                            distinctive style that is characterised by its smooth rhythms, 
+                            emotive vocals, and strong backbeat. <br>Here are some of my favorite R&B tracks:</p>
+                        <ul>
+                            <li>
+                                <strong>"Na Naman"</strong> by Arthur Nery
+                                <iframe style="border-radius:12px" 
+                                    src="https://open.spotify.com/embed/track/3EMWqEJSk0wqwi5JUYA9l1?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameborder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                                </iframe>
+                            </li>
+                            <li>
+                                <strong>"Always"</strong> by Daniel Caesar
+                                <iframe style="border-radius:12px" 
+                                    src="https://open.spotify.com/embed/track/2g5eyjDwIUDiA5mc3nSoVm?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameborder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                                </iframe>
+                            </li>
+                            <li>
+                                <strong>"Kabado"</strong> by Adie
+                                <iframe style="border-radius:12px" 
+                                    src="https://open.spotify.com/embed/track/4aa8nlykW7j4jeBLeKQRyN?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameborder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                                </iframe>
+                            </li>
+                            <li>
+                                <strong>"Snooze"</strong> by SZA
+                                <iframe style="border-radius:12px" 
+                                    src="https://open.spotify.com/embed/track/4iZ4pt7kvcaH6Yo8UoZ4s2?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameborder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                                </iframe>
+                            </li>
+                            <li>
+                                <strong>"Soft SSpot"</strong> by Keshi
+                                <iframe 
+                                    style="border-radius:12px" 
+                                    src="https://open.spotify.com/embed/track/2aL4lMGhWdPpyPL6COPou7?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameborder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                    loading="lazy">
+                                </iframe>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="category" id="altMus">
+                    <h3>Alternative Music</h3>
+                    <p>These are music that falls outside the mainstream, 
+                        often characterized by independent artists, eclectic sounds, 
+                        and a willingness to push creative boundaries, encompassing 
+                        various subgenres like alternative rock, indie, and alternative pop.
+                        <br>Here are some of my favorite Alternative Music tracks:</p>
                     <ul>
                         <li>
-                            <strong>"Take Five"</strong> by Dave Brubeck
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/jazz1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </li>   
-                        <li>
-                            <strong>"So What"</strong> by Miles Davis
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/jazz2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <strong>"Knee Socks"</strong> by Arctic Monkeys
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/2LGdO5MtFdyphi2EihANZG?utm_source=generator" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
                         </li>
                         <li>
-                            <strong>"Feeling Good"</strong> by Nina Simone
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/jazz3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-
+                            <strong>"Heaven And Back"</strong> by Chase Atlantic
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/1JdQibdvxgcrB8Rv1KFndw?utm_source=generator" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Heavenly"</strong> by Cigarettes After Sex
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/5oxWFclzZaZZWlo0BZWz6j?utm_source=generator" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Oh Caroline"</strong> by The 1975
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/14dJexYlvd3t3XAtD1pYW1?utm_source=generator" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Pretty Boy"</strong> by The Neighbourhood
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/7IL8PSVwLOJxqYne6azxQv?si=9468a102c3b2477b" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
                         </li>
                     </ul>
                 </div>
 
+                <div class="category" id="popPunk">
+                    <h3>Pop Punk</h3>
+                    <p>It is a rock music genre that blends the fast tempos and 
+                        energy of punk rock with the catchy melodies and pop song structures, 
+                        often featuring themes of adolescence and anti-establishment sentiments.  
+                        <br>Here are some of my favorite rock tracks:
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>"Be Your Everything"</strong> by Boys Like Girls
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/5X1VGqaNrpXC8HBPEA4uDT?si=ffc29f57ec504517" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Scene One"</strong> by Sleeping With Sirens
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/1WH0HcFJhu5r6Jxqdsh54N?si=0a610752d68c436d" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Sugar, We're Going Down"</strong> by Fall Out Boy
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/2TfSHkHiFO4gRztVIkggkE?si=8c80b7dfc38d4147" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Franklin"</strong> by Paramore
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/3mohHx7VTiOurTv8XbTYrY?si=ab4577baa3824916" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Always"</strong> by blink-182
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/3HM4NePuYAqdXpAGBk7nNz?si=eb7a41d89f0a4e2b" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                    </ul>
+                </div>
                 <div class="category" id="pop">
                     <h3>Pop</h3>
-                    <p>Pop music always gets me in a good mood. Here are some of my favorite pop tracks:</p>
+                    <p> a genre of music characterized by catchy melodies, 
+                        simple structures, and mass appeal, often found on 
+                        mainstream radio and in various countries and cultures. 
+                        <br>Here are some of my favorite pop tracks:</p>
                     <ul>
                         <li>
-                            <strong>"Blinding Lights"</strong> by The Weeknd
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/pop1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <strong>"Naked In Manhattan"</strong> by Chappell Roan
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/4LKYOetuIF5c9XjeLBL9av?si=89da7fac22d24056" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
                         </li>
                         <li>
-                            <strong>"Shape of You"</strong> by Ed Sheeran
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/pop2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <strong>"The Alchemy"</strong> by Taylor Swift
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/1dhMTsEZz6ZEquGvmzVoHn?si=05f44dc9683d44db" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
                         </li>
                         <li>
-                            <strong>"Bad Guy"</strong> by Billie Eilish
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/pop3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <strong>"Good Graces"</strong> by Sabrina Carpenter
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/102YUQbYmwdBXS7jwamI90?si=c23443b66eef4c7a" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"That's So True"</strong> by Gracie Abrams
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/7ne4VBA60CxGM75vw0EYad?si=ec9a3f0d23c548e5" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        </li>
+                        <li>
+                            <strong>"Imagine"</strong> by Ariana Grande
+                            <iframe 
+                                style="border-radius:12px" 
+                                src="https://open.spotify.com/embed/track/39LmTF9RgyakzSYX8txrow?si=f3a94c6169b94785" 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
                         </li>
                     </ul>
                 </div>
-
-                <div class="category" id="rock">
-                    <h3>Rock</h3>
-                    <p>Rock music energizes me like no other. Here are some of my favorite rock tracks:</p>
-                    <ul>
-                        <li>
-                            <strong>"Bohemian Rhapsody"</strong> by Queen
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/rock1.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </li>
-                        <li>
-                            <strong>"Smells Like Teen Spirit"</strong> by Nirvana
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/rock2.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </li>
-                        <li>
-                            <strong>"Hotel California"</strong> by Eagles
-                            <video controls width="510" height="360">
-                                <source src="myBeatVideos/rock3.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div id="myOnRepeat" class="section">
+                <h2>My On Repeat Playlist</h2>
+                <p>Here is my current "On Repeat" playlist from Spotify:</p>
+                <iframe 
+                    style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1Epw1D130gWiHq?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
 
