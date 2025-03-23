@@ -3,64 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Jess Patrick Paguel - Get in touch for inquiries, collaborations, or just to say hello!">
     <title>Contact Me</title>
     <link rel="stylesheet" href="contacts.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Hedvig Letters Serif' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Hedvig+Letters+Serif:400,600&display=swap' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<header>
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="bioPage.html">Biography</a>
-        <a href="skillPage.html">Skills</a>
-        <a href="resumePage.html">Resume</a>
-        <a href="photoGallery.html">Photo Gallery</a>
-        <a href="myBeat.html">My Beat</a>
-        <a href="myKindOfFilm.html">My Kind of Film</a>
-        <a href="dreamPlacesToVisit.html">Dream Places to Visit</a>
-        <a href="bucketList.html">Bucket List</a>
-        <a href="contacts.html">Contact Me</a>
-    </div>
-</header> 
+<body id="top">
+    <header>
+        <div class="topnav" role="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="bioPage.html">Biography</a>
+            <a href="skillPage.html">Skills</a>
+            <a href="resumePage.html">Resume</a>
+            <a href="photoGallery.html">Photo Gallery</a>
+            <a href="myBeat.html">My Beat</a>
+            <a href="myKindOfFilm.html">My Kind of Film</a>
+            <a href="dreamPlacesToVisit.html">Dream Places to Visit</a>
+            <a href="bucketList.html">Bucket List</a>
+            <a href="contacts.html" class="active">Contact Me</a>
+        </div>
+    </header> 
 
-<div class="sidebar light-grey bar-block">
-    <a href="#childhood" class="bar-item button">Childhood Years</a>
-    <a href="#teenage" class="bar-item button">Teenage Years</a>
-    <a href="#college" class="bar-item button">College Years</a>
-</div>
+    <main>
+        <div class="container">
+            <div class="head">
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out to me through any of the platforms below or send me a message directly using the form.</p>
+            </div>
 
-<body id="top" class="container">
+            <div class="contact-layout">
+                <div class="left-side">
+                    <div class="profile-picture">
+                        <img src="jess2.webp" alt="Jess Patrick Paguel" aria-label="Profile picture">
+                    </div>
+                    <div class="contact-buttons">
+                        <div class="button email-button">
+                            <a href="mailto:paguel.jesspatrick@ue.edu.ph" aria-label="Send email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> 
+                                <span>paguel.jesspatrick@ue.edu.ph</span>
+                            </a>
+                        </div>
+                        <div class="button phone-button">
+                            <a href="tel:+639765298516" aria-label="Call phone number">
+                                <i class="fa fa-phone" aria-hidden="true"></i> 
+                                <span>+63 976 529 8516</span>
+                            </a>
+                        </div>
+                        <div class="button linkedin-button">
+                            <a href="https://www.linkedin.com/in/jess-patrick-paguel-7ab067357/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i> 
+                                <span>Jess Patrick R. Paguel</span>
+                            </a>
+                        </div>
+                        <div class="button github-button">
+                            <a href="https://github.com/Je-sp" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                                <i class="fa fa-github" aria-hidden="true"></i> 
+                                <span>Je-sp</span>
+                            </a>
+                        </div>
+                        <div class="button instagram-button">
+                            <a href="https://www.instagram.com/jess_pagz/" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                                <i class="fa fa-instagram" aria-hidden="true"></i> 
+                                <span>jess_pagz</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="head">
-        <h1>Contact Me</h1>
-    </div>
+                <div class="right-side">
+                    <section id="form">
+                        <h2>Send a Message</h2>
+                        <form action="mailto:paguel.jesspatrick@ue.edu.ph" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
+                                <span class="hint">Please enter your full name</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                <span class="hint">We'll never share your email with anyone else</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" placeholder="What is this regarding?" required minlength="3">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Write your message here" required minlength="10"></textarea>
+                            </div>
+                            
+                            <button type="submit" id="submit-btn">
+                                <span class="button-text">Send Message</span>
+                                <span class="button-icon"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                            </button>
+                        </form>
+                        
+                        <!-- Success message displayed via CSS :target selector when form is submitted -->
+                        <div id="success" class="form-success-message">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <h3>Thanks for reaching out!</h3>
+                            <p>Your message has been sent successfully. I'll get back to you as soon as possible.</p>
+                            <a href="contacts.html" class="back-button">Send Another Message</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <section id="contact">
-        <p>You can reach me through the following:</p>
-        <ul>
-            <li>Email: <a href="mailto:paguel.jesspatrick@ue.edu.ph">PAGUEL.JESSPATRICK@UE.EDU.PH</a></li>
-            <li>Phone: <a href="cel:+639765298516"></a>+639765298516</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/jess-patrick-paguel-7ab067357/" target="_blank">Jess Patrick R. Paguel</a></li>
-            <li>GitHub: <a href="https://github.com/Je-sp" target="_blank">Je-sp</a></li>
-        </ul>
-        
-        <form action="mailto:yourname@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    
     <a href="#top" class="to-top">
         <img src="to-top.jpg" alt="Back to Top">
     </a>
-    
 </body>
 </html>
