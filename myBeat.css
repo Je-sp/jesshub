@@ -4,7 +4,9 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 50px;
 }
+
 
 .topnav {
     font-family: 'Ubuntu Mono', 'Hedvig Letters Serif', serif;
