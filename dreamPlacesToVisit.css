@@ -92,7 +92,7 @@ body {
     margin: 0 5% 40px 10%;
     position: relative;
     margin-top: 6%;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .section {
@@ -208,16 +208,13 @@ h2:after {
 
 /* Map styling */
 .map-container {
-    position: relative;
+    position: center;
     margin: 20px auto;
     max-width: 100%;
     text-align: center;
 }
 
-.responsive-map {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
+.responsive-map {   
     border: 3px solid #2962ff;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
