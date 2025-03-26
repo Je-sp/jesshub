@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Kind of Film</title>
+    <title>My TV Shows</title>
     <link rel="stylesheet" href="myTvShows.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
@@ -19,7 +19,7 @@
         <a href="resumePage.html">Resume</a>
         <a href="photoGallery.html">Photo Gallery</a>
         <a href="myBeat.html">My Beat</a>
-        <a href="myMovies.html">Movies</a>
+        <a href="myKindOfFilm.html">Movies</a>
         <a href="myTvShows.html" class="active">TV Shows</a>
         <a href="dreamPlacesToVisit.html">Dream Places to Visit</a>
         <a href="bucketList.html">Bucket List</a>
@@ -34,18 +34,21 @@
         <a href="#categories" class="bar-item button">Categories</a>
         <ul class="category-list">
             <li><a href="#drama" class="button">Drama</a></li>
+            <li><a href="#kdrama" class="button">K-Drama</a></li>
             <li><a href="#scifi" class="button">Sci-Fi</a></li>
+            <li><a href="#action" class="button">Action</a></li>
             <li><a href="#anime" class="button">Anime</a></li>
+            <li><a href="#comedy" class="button">Comedy</a></li>
         </ul>
     </div>
 
     <div class="container">
-        <h1 class="name">My Kind of Film</h1>
-        <h4 class="sub">A Collection of My Favorite TV Shows</h4>
+        <h1 class="name">My TV Shows</h1>
+        <h4 class="sub">A Collection of My Favorite Series</h4>
 
         <div class="section" id="about">
             <h2>About My Favorite Shows</h2>
-            <p>Here, I share my favorite TV shows and why I love them. These shows have inspired me in many ways and hold a special place in my heart.</p>
+            <p>Television has the unique power to transport us to different worlds, introduce us to compelling characters, and tell stories that stay with us long after the credits roll. Here, I share my favorite TV shows across different genres that have captivated me with their storytelling, characters, and visual artistry.</p>
         </div>
         
         <div class="section" id="categories">
@@ -56,27 +59,93 @@
                 <p>Compelling narratives with complex characters and emotional depth:</p>
                 <div class="show-grid">
                     <div class="show-card">
-                        <strong>"Breaking Bad"</strong>
-                        <p>Is a critically acclaimed American crime drama 
-                            series following Walter White, a high school chemistry teacher 
-                            diagnosed with terminal cancer, who turns to manufacturing and 
-                            selling methamphetamine to secure his family's future, partnering 
-                            with his former student Jesse Pinkman.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/tvShow1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/breakingBad.webp" alt="Breaking Bad Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Breaking Bad</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Vince Gilligan</span>
+                                <span class="stars">Stars: Bryan Cranston, Aaron Paul, Anna Gunn</span>
+                                <span class="year">2008-2013</span>
+                            </div>
+                            <p class="synopsis">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine to secure his family's future.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="show-card">
-                        <strong>"Anne with an E"</strong>
-                        <p>Is a Netflix series that reimagines the classic 
-                            coming-of-age story of Anne of Green Gables, focusing 
-                            on a 13-year-old orphan girl's journey for love, acceptance, 
-                            and her place in the world, set in the late 1890s.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/tvShow3.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/anneWithAnE.webp" alt="Anne with an E Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Anne with an E</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Moira Walley-Beckett</span>
+                                <span class="stars">Stars: Amybeth McNulty, Geraldine James, R.H. Thomson</span>
+                                <span class="year">2017-2019</span>
+                            </div>
+                            <p class="synopsis">A coming-of-age story about an outsider who fights for acceptance, for her place in the world, and for love.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category" id="kdrama">
+                <h3>K-Drama</h3>
+                <p>Korean dramas known for their emotional storytelling, high production value, and cultural richness:</p>
+                <div class="show-grid">
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/crashLandingOnYou.jpg" alt="Crash Landing on You Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Crash Landing on You</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Lee Jeong-hyo</span>
+                                <span class="stars">Stars: Hyun Bin, Son Ye-jin, Kim Jung-hyun</span>
+                                <span class="year">2019-2020</span>
+                            </div>
+                            <p class="synopsis">A South Korean heiress accidentally paraglides into North Korea and meets a North Korean army officer who decides to help her hide.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/crashLanding.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/itaewonClass.jpeg" alt="Itaewon Class Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Itaewon Class</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Kim Sung-yoon</span>
+                                <span class="stars">Stars: Park Seo-joon, Kim Da-mi, Yoo Jae-myung</span>
+                                <span class="year">2020</span>
+                            </div>
+                            <p class="synopsis">An ex-con opens a street bar in Itaewon to seek revenge on the family that caused his father's death.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/itaewonClass.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,27 +155,93 @@
                 <p>Imaginative shows that explore futuristic concepts and alternate realities:</p>
                 <div class="show-grid">
                     <div class="show-card">
-                        <strong>"Stranger Things"</strong>
-                        <p>Is a Netflix science fiction-horror series set in the 1980s, 
-                            following a group of friends in the fictional town of Hawkins, 
-                            Indiana, who uncover supernatural mysteries, secret government 
-                            experiments, and a portal to another dimension, known as the
-                            Upside Down.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/tvShow2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/strangerThings.jpg" alt="Stranger Things Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Stranger Things</h4>
+                            <div class="show-metadata">
+                                <span class="director">Directors: The Duffer Brothers</span>
+                                <span class="stars">Stars: Millie Bobby Brown, Finn Wolfhard, Winona Ryder</span>
+                                <span class="year">2016-Present</span>
+                            </div>
+                            <p class="synopsis">When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="show-card">
-                        <strong>"The Mandalorian"</strong>
-                        <p>Set in the Star Wars universe, follows a lone bounty hunter who is 
-                           hired to retrieve "The Child" but instead goes on the run to protect 
-                           the infant, encountering various adversaries and allies as he journeys 
-                           through the lawless galaxy after the fall of the Empire.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/tvShow2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/theMandalorian.jpeg" alt="The Mandalorian Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>The Mandalorian</h4>
+                            <div class="show-metadata">
+                                <span class="director">Creator: Jon Favreau</span>
+                                <span class="stars">Stars: Pedro Pascal, Carl Weathers, Giancarlo Esposito</span>
+                                <span class="year">2019-Present</span>
+                            </div>
+                            <p class="synopsis">The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category" id="action">
+                <h3>Action</h3>
+                <p>High-intensity shows filled with thrilling fights, chases, and suspense:</p>
+                <div class="show-grid">
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/dareDevil.jpg" alt="Daredevil Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Daredevil</h4>
+                            <div class="show-metadata">
+                                <span class="director">Creator: Drew Goddard</span>
+                                <span class="stars">Stars: Charlie Cox, Vincent D'Onofrio, Deborah Ann Woll</span>
+                                <span class="year">2015-2018</span>
+                            </div>
+                            <p class="synopsis">A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/daredevil.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/vikings.jpg" alt="Vikings Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Vikings</h4>
+                            <div class="show-metadata">
+                                <span class="director">Creator: Michael Hirst</span>
+                                <span class="stars">Stars: Gustaf Skarsgård, Katheryn Winnick, Alexander Ludwig</span>
+                                <span class="year">2013-2020</span>
+                            </div>
+                            <p class="synopsis">Vikings follows the adventures of Ragnar Lothbrok, the greatest hero of his age, and his band of Viking brothers and family.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/vikings.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -116,27 +251,93 @@
                 <p>Japanese animation with compelling stories, stunning visuals, and unique characters:</p>
                 <div class="show-grid">
                     <div class="show-card">
-                        <strong>"Mushoku Tensei: Jobless Reincarnation"</strong>
-                        <p>Follows a 34-year-old unemployed man who is killed in a traffic accident and 
-                           reincarnated in a magical world as Rudeus Greyrat, retaining his memories from his 
-                           previous life. With a second chance at life, he vows to live without regrets, using 
-                           his knowledge from his modern upbringing and newfound magical abilities.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/anime1.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/mushokuTensei.jpg" alt="Mushoku Tensei Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Mushoku Tensei: Jobless Reincarnation</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Manabu Okamoto</span>
+                                <span class="stars">Stars: Yumi Uchiyama, Konomi Kohara, Ai Kayano (Voice)</span>
+                                <span class="year">2021-Present</span>
+                            </div>
+                            <p class="synopsis">A 34-year-old unemployed man is killed and reincarnated in a magical world as Rudeus Greyrat, where he resolves to live his new life without regrets.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow5.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
+
                     <div class="show-card">
-                        <strong>"Solo Leveling"</strong>
-                        <p>In a world where hunters with supernatural abilities must battle deadly monsters 
-                           to protect humanity, Sung Jin-Woo, the weakest of all hunters, finds himself in a 
-                           perilous dungeon where he nearly dies. After surviving a mysterious "System" 
-                           program chooses him as its sole player, granting him the unique ability to level 
-                           up and grow stronger with each battle, transforming from the weakest to the strongest.</p>
-                        <video controls width="320">
-                            <source src="myKindOfFilmVideos/anime2.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/soloLEveling.jpg" alt="Solo Leveling Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Solo Leveling</h4>
+                            <div class="show-metadata">
+                                <span class="director">Director: Shunsuke Nakashige</span>
+                                <span class="stars">Stars: Taito Ban, Genta Nakamura, Akio Ōtsuka (Voice)</span>
+                                <span class="year">2023-Present</span>
+                            </div>
+                            <p class="synopsis">In a world where hunters must battle deadly monsters to protect humanity, Sung Jin-Woo, the weakest hunter, gains the unique ability to level up after surviving a deadly dungeon.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/tvShow6.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category" id="comedy">
+                <h3>Comedy</h3>
+                <p>Shows that bring laughter through witty dialogue, humorous situations, and memorable characters:</p>
+                <div class="show-grid">
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/theOffice.jpg" alt="The Office Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>The Office</h4>
+                            <div class="show-metadata">
+                                <span class="director">Creators: Greg Daniels, Ricky Gervais, Stephen Merchant</span>
+                                <span class="stars">Stars: Steve Carell, John Krasinski, Jenna Fischer</span>
+                                <span class="year">2005-2013</span>
+                            </div>
+                            <p class="synopsis">A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/theOffice.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-card">
+                        <div class="show-poster">
+                            <img src="myTvShowsPoster/brooklynNineNine.jpg" alt="Brooklyn Nine-Nine Poster">
+                        </div>
+                        <div class="show-info">
+                            <h4>Brooklyn Nine-Nine</h4>
+                            <div class="show-metadata">
+                                <span class="director">Creators: Dan Goor, Michael Schur</span>
+                                <span class="stars">Stars: Andy Samberg, Stephanie Beatriz, Terry Crews</span>
+                                <span class="year">2013-2021</span>
+                            </div>
+                            <p class="synopsis">Comedy series following the lives of detectives in Brooklyn's 99th precinct, led by the serious Captain Holt and the immature but talented Detective Jake Peralta.</p>
+                            <div class="video-container">
+                                <video controls>
+                                    <source src="myTvShows/brooklynNineNine.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

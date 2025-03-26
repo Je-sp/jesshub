@@ -206,7 +206,6 @@ h2:after {
     list-style-type: none;
 }
 
-/* Map styling */
 .map-container {
     position: center;
     margin: 20px auto;
@@ -233,7 +232,6 @@ h2:after {
     margin-top: 10px;
 }
 
-/* Destination styling */
 .destination {
     margin-bottom: 50px;
     padding: 25px;
@@ -273,17 +271,22 @@ h2:after {
 
 .destination-content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
 .destination-image {
-    flex: 1;
-    min-width: 300px;
+    flex: 0 0 40%;
+    max-width: 450px;
 }
 
 .destination-image img {
     width: 100%;
+    height: auto;
+    display: block;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
@@ -295,25 +298,67 @@ h2:after {
 }
 
 .destination-info {
-    flex: 1;
-    min-width: 300px;
+    flex: 0 0 55%;
+}
+
+.destination-why {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgba(229, 246, 253, 0.5);
+    border-radius: 8px;
+    border-left: 3px solid #1565c0;
+}
+
+.experience-section {
+    width: 100%;
+    margin-top: 20px;
+    clear: both;
 }
 
 .experience-title {
     font-weight: bold;
     color: #1a237e;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     margin-top: 20px;
+    font-size: 18px;
 }
 
-.destination-info ul {
-    padding-left: 20px;
-    margin-bottom: 0;
+.experience-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.destination-info li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+.experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 15px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-text {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 .to-top {
@@ -341,7 +386,6 @@ h2:after {
     background: linear-gradient(135deg, #f0f0f0, #ffffff);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .container {
         margin-left: 0;
@@ -361,12 +405,26 @@ h2:after {
         flex-direction: column;
     }
     
+    .destination-image, .destination-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
     .section, .destination {
         padding: 20px;
     }
     
-    .destination-image {
-        margin-bottom: 20px;
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .experience-img {
+        width: 100%;
+        height: auto;
+        max-height: 180px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
     
     h2 {
