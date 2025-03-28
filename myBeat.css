@@ -84,6 +84,7 @@ a:focus {
     top: 56px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+    z-index: 100;
 }
   
 .sidebar h3 {
@@ -104,6 +105,20 @@ a:focus {
   
 .sidebar .bar-item:hover {
     background-color: #f0f0f0;
+}
+
+.category-list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.category-list li {
+    margin-bottom: 5px;
+}
+
+.category-list a {
+    font-size: 16px;
+    margin: 4px 0;
 }
 
 body {
@@ -291,13 +306,21 @@ p {
     margin-bottom: 15px;
 }
 
+.image-link {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
 .artist-image {
     width: 200px;
     height: 100px;
-    object-fit: fill;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .large-artist-image {
@@ -305,9 +328,38 @@ p {
     height: 150px;
 }
 
-.artist-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 49, 146, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.image-overlay.small {
+    border-radius: 8px;
+}
+
+.image-overlay span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.image-link:hover .artist-image {
+    transform: scale(1.1);
+}
+
+.image-link:hover .image-overlay {
+    opacity: 1;
 }
 
 .song-details {
@@ -366,11 +418,7 @@ iframe:hover {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: all 0.5s ease;
-}
-
-.artist-card:hover .artist-card-image {
-    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }
 
 .artist-card-info {
@@ -498,59 +546,55 @@ iframe:hover {
         padding: 20px;
     }
     
-    .section, .category, #myOnRepeat {
-        padding: 20px;
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 56px;
+        padding: 10px;
     }
     
-    #myOnRepeat {
-        margin: 30px auto;
-    }
-    
-    p, .category p {
-        font-size: 16px;
-    }
-    
-    .track-item {
-        padding: 12px;
+    #content {
+        margin-left: 0 !important;
+        width: 100%;
     }
     
     .artist-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-        gap: 20px;
+        grid-template-columns: 1fr;
     }
     
     .artist-info {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
     
     .artist-image {
-        margin-bottom: 15px;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .name {
-        font-size: 2em;
+    .topnav {
+        padding: 0;
+        flex-wrap: wrap;
     }
     
-    .sub {
-        font-size: 1.1em;
+    .topnav a {
+        padding: 8px 10px;
+        font-size: 14px;
     }
     
-    h2 {
-        font-size: 1.7em;
+    .section, .category {
+        padding: 15px;
     }
     
-    .category h3 {
+    h2, .category h3, #myOnRepeat h3 {
         font-size: 1.5em;
     }
     
-    #myOnRepeat h3 {
-        font-size: 1.7em;
-    }
-    
-    .artist-card-image {
-        height: 150px;
+    p, .track-item strong {
+        font-size: 16px;
     }
 }
